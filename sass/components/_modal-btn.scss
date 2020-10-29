@@ -9,11 +9,11 @@
   letter-spacing: 0.06em;
 
   margin-top: 30px;
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   border-radius: 4px;
-  color: var(--hero-color);
+  color: $hero-color;
 }
 
 .modal-form {
@@ -36,11 +36,11 @@
 .modal-form-input:focus,
 .modal-form-message:focus {
   outline: none;
-  border: 1px solid #2196f3;
+  border: 1px solid $accent-color;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus + .modal-form-svg {
-  fill: #2196f3;
+  fill: $accent-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input {
@@ -94,11 +94,11 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-agree:checked + .modal-label-agree::before {
-  background-color: #2196f3;
+  background-color: $accent-color;
   background-image: url(../images/symbols/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  border-color: #2196f3;
+  border-color: $accent-color;
 }
 .text-form {
   font-size: 12px;
@@ -123,13 +123,13 @@
   align-content: center;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: $accent-color;
 }
 
 .modal-form-btn {
   margin: auto;
   align-self: flex-start;
-  background: #2196f3;
+  background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: solid transparent;
@@ -137,7 +137,7 @@
   width: 200px;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: $hero-color;
   cursor: pointer;
 }
 
@@ -149,19 +149,19 @@
   top: 0;
   left: 0;
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function;
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-  transition: 250ms var(--timing-function);
+  transition: 250ms $timing-function;
 }
 
 .modal {
@@ -172,7 +172,7 @@
   width: 528px;
   height: 581px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--hero-color);
+  background-color: $hero-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;

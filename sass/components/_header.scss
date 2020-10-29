@@ -31,7 +31,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .navigation-container .link {
@@ -49,7 +49,7 @@
 
 .nav-list-link .link:hover,
 .nav-list-link .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .site-nav {
@@ -64,12 +64,12 @@
 }
 
 .site-nav .link.current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .logo-web-part,
 .logo-studio-part {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -77,11 +77,11 @@
 
   text-decoration: none;
 
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .logo-studio-part {
-  font-family: var(--secondary-font);
-  color: var(--logo-color);
+  font-family: $secondary-font;
+  color: $logo-color;
 }
 
 .nav-list-item .contact-link {
@@ -97,9 +97,9 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  color: var(--link-color);
+  color: $link-color;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 }
 
 .nav-list-link {
@@ -109,31 +109,31 @@
 
 .contact-svg {
   margin-right: 10px;
-  fill: var(--svg-color);
+  fill: $svg-color;
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .contact-link {
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 }
 
 .contact-link:hover,
 .contact-link:focus,
 .navigation-container .link:hover,
 .navigation-container .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contact-link:hover svg,
 .contact-link:focus svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .nav-list-item .link {
   position: relative;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 }
 
 .current::after {
@@ -141,7 +141,7 @@
   content: "";
   width: 100%;
   height: 4px;
-  background-color: #2196f3;
+  background-color: $accent-color;
   position: absolute;
   border-radius: 2px;
 

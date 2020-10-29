@@ -10,7 +10,7 @@
   display: flex;
 }
 .duties .logo-studio-part-footer {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -18,7 +18,7 @@
 
   letter-spacing: 0.03em;
 
-  color: var(--hero-color);
+  color: $hero-color;
 }
 
 .duties-list {
@@ -44,7 +44,7 @@
   margin-bottom: 50px;
   letter-spacing: 0.03em;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .duties-title {
@@ -57,7 +57,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $hero-color;
 }
 
 .overlay {

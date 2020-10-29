@@ -3,7 +3,7 @@
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--team-background);
+  background-color: $team-background;
 }
 
 .team-list {
@@ -19,7 +19,7 @@
 .team-list-item {
   width: 270px;
 
-  background-color: var(--hero-color);
+  background-color: $hero-color;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -35,7 +35,7 @@
   margin-bottom: 50px;
   letter-spacing: 0.03em;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .team-member-info {
@@ -53,7 +53,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .tem-member-position {
@@ -67,7 +67,7 @@
 
   letter-spacing: 0.03em;
 
-  color: var(--link-color);
+  color: $link-color;
 }
 
 .social-links-list {
@@ -86,21 +86,21 @@
 
   border-radius: 50%;
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .social-list-svg {
   width: 20px;
   height: 20px;
-  fill: var(--svg-color);
+  fill: $vg-color;
 
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms $timing-function;
 }
 
 .social-list-link:hover .social-list-svg {
-  fill: var(--team-background);
+  fill: $team-background;
 }
 
 .social-list-link:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
