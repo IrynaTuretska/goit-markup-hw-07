@@ -1,0 +1,59 @@
+/*=============== CLIENTS INFORMATION ============ */
+
+.clients-section {
+  display: flex;
+  padding-top: 94px;
+}
+
+.clients-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin: 0 auto;
+
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+}
+
+.client-link-item {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  justify-content: center;
+  border: 1px solid #afb1b8;
+
+  transition: border-color 250ms var(--timing-function);
+}
+
+.client-link-item svg {
+  fill: var(--svg-color);
+}
+
+.client-link-item:hover svg {
+  fill: var(--accent-color);
+}
+
+.clients-list-logo {
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.client-link-item:hover,
+.client-link-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.clients-list-logo:not(:last-child) {
+  margin-right: 30px;
+}
