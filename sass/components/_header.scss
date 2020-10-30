@@ -1,149 +1,127 @@
-/*===================== HEADER ===================== */
-.header {
-  height: 80px;
-  border: 1px solid #ececec;
-}
-
-.main-nav {
+.header .container {
   display: flex;
 }
 
-.header .link {
-  display: block;
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.navigation-container {
+.navigation {
   display: flex;
   align-items: center;
-  height: 80px;
+  &-list {
+    display: flex;
+  }
 }
 
-.site-nav {
+.navigation-second {
   display: flex;
-}
-
-.nav-link {
+  justify-content: flex-end;
   margin-left: auto;
 }
+.list-telephone {
+  margin-left: 30px;
+}
 
-.site-nav .link {
+.navigation-list-link {
   display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+}
+.nav-list-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.header-mail {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  color: $title-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.navigation-container .link {
-  margin-right: 93px;
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-}
-
-.nav-list-link:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list-link .link:hover,
-.nav-list-link .link:focus {
+.current {
   color: $accent-color;
-}
-
-.site-nav {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.site-nav .link.current {
-  color: $accent-color;
-}
-
-.logo-web-part,
-.logo-studio-part {
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-
-  text-decoration: none;
-
-  color: $accent-color;
-}
-.logo-studio-part {
-  font-family: $secondary-font;
-  color: $logo-color;
-}
-
-.nav-list-item .contact-link {
-  margin-right: 50px;
-}
-
-.nav-list-link .contact-link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
-  color: $link-color;
-
-  transition: color 250ms $timing-function;
-}
-
-.nav-list-link {
-  display: flex;
-  align-items: center;
-}
-
-.contact-svg {
-  margin-right: 10px;
-  fill: $svg-color;
-
-  transition: fill 250ms $timing-function;
-}
-
-.contact-link {
-  transition: color 250ms $timing-function;
-}
-
-.contact-link:hover,
-.contact-link:focus,
-.navigation-container .link:hover,
-.navigation-container .link:focus {
-  color: $accent-color;
-}
-
-.contact-link:hover svg,
-.contact-link:focus svg {
-  fill: $accent-color;
-}
-
-.nav-list-item .link {
   position: relative;
-
-  transition: color 250ms $timing-function;
+  &::after {
+    display: flex;
+    content: '';
+    width: 48px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-.current::after {
-  display: flex;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  position: absolute;
-  border-radius: 2px;
+.current-portfolio {
+  color: $accent-color;
+  position: relative;
+  &::after {
+    display: flex;
+    content: '';
+    width: 78px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+  }
+}
 
-  bottom: 0;
+.size-navigation {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-tel {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-icon-header {
+  margin-right: 10px;
+  fill: $primary-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header-tel:hover &,
+  .header-mail:hover & {
+    fill: $accent-color;
+  }
+}
+
+.header-border {
+  border-bottom: 1px solid #ececec;
 }

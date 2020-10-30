@@ -1,26 +1,11 @@
-:root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  --title-color: #212121;
-  --link-color: #757575;
-  --accent-color: #2196f3;
-  --logo-color: #000000;
-  --hero-color: #ffffff;
-  --hero-background: #2f303a;
-  --team-background: #f5f4fa;
-  --svg-color: #afb1b8;
-
-  --link-footer-color: rgba(255, 255, 255, 0.6);
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
+$main-font: 'Roboto', sans-serif;
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$main-text-color: #ffffff;
+$accent-color: #2196f3;
+$logo-color: #000000;
+$other-color: #f5f4fa;
+$contacts-color: rgba(255, 255, 255, 0.6);
+$background-color: #2f303a;
+$svg-team-icon-color: #afb1b8;
+$footer-hover-color: white;

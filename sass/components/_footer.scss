@@ -1,152 +1,92 @@
-/*================ FOOTER =================*/
-
-.footer-section {
-  display: flex;
+.footer {
+  background: $background-color;
+  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  background: $hero-background;
 }
-
-.footer-section .container {
-  display: flex;
-}
-
-.footer-contacts {
-  padding: 0px 0px;
-}
-
-.footer-contacts .link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  margin-left: 0px;
-  text-decoration: none;
-
-  color: $link-footer-color;
-}
-
-.logo-studio-part-footer {
-  font-family: $secondary-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-
-  letter-spacing: 0.03em;
-
-  color: $hero-color;
-}
-
-.address-info {
+.list-adress {
   margin-top: 20px;
 }
-
-.footer-address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
-
-  color: $hero-color;
-}
-
-.footer-address-list:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-link,
-.footer-tel {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-top: 9px;
-
-  color: $link-footer-color;
-
-  transition: color 250ms $timing-function;
-}
-
-.footer-tel {
-  margin-bottom: 60px;
-  margin-top: 9px;
-}
-
-.footer-link:hover,
-.footer-linkk:focus,
-.footer-tel:hover,
-.footer-tel:focus,
-.footer-address:hover,
-.footer-address:focus {
   color: $accent-color;
 }
+.footer-logo-second {
+  color: $main-text-color;
+}
 
-.footer-links {
-  width: 206px;
-  height: 80px;
-  margin-top: 12px;
-  margin-bottom: 40px;
+.navigation-list-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.contacts {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $contacts-color;
+}
+.first-footer {
+  display: flex;
+  align-items: baseline;
+}
+.second-footer {
   margin-left: 70px;
 }
-
-.social-links-list-footer {
+.list-icon {
   display: flex;
-  justify-content: space-between;
-  margin-top: 32px;
+  margin-top: 20px;
 }
-
-.social-list .social-link {
-  padding-bottom: 0px 0px;
-}
-
-.contact-us {
+.footer-social {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: $hero-color;
+  color: $footer-hover-color;
 }
-
-.footer-contact-list:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.social-list-link {
+.icon-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 40px;
+  width: 44px;
   height: 44px;
-
-  border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-
-  transition: background-color 250ms var(--timing-function);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $accent-color;
+  }
 }
 
-.footer-section .social-list-svg {
+.footer-svg {
+  display: flex;
   width: 20px;
   height: 20px;
-  fill: $team-background;
+  fill: $footer-hover-color;
 }
 
-.social-list-link:hover .social-list-svg {
-  color: $team-background;
+.icon-footer-list:not(:last-child) {
+  margin-right: 10px;
 }
-
-.social-list-link:hover {
-  background-color: $accent-color;
+.all-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .subscribe-mail {
@@ -166,7 +106,6 @@
   align-items: center;
   justify-content: flex-end;
   margin-left: 12px;
-  margin-right: 0px;
   width: 200px;
   height: 50px;
   background-color: $accent-color;
@@ -175,7 +114,7 @@
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: $hero-color
+  color: $main-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: solid transparent;
@@ -183,23 +122,17 @@
 .svg-subscribe {
   margin-right: 28px;
   margin-left: 10px;
-  fill: $hero-color;
 }
 .text-mail {
   width: 358px;
   height: 50px;
   margin-top: 20px;
-  color: $hero-color;
+  color: $main-text-color;
 }
-
-.subscribe {
-  margin-top: 12px;
-}
-
 .subscribe-mail input {
   padding: 15px;
   font-size: 16px;
-  background-color: #2f303a;
+  background-color: $background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -213,5 +146,5 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $hero-color;
+  color: $main-text-color;
 }

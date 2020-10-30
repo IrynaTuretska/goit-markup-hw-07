@@ -1,11 +1,15 @@
-@import "./utils/variables";
-@import "./components/common";
-@import "./components/container";
-@import "./components/header";
-@import "./components/modal-btn";
-@import "./components/hero";
-@import "./components/advantages";
-@import "./components/duties";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
+/*===========Base==================*/
+@import './utils/variables';
+@import './base/visually-hidden';
+@import './base/common';
+
+/*===========Components===========*/
+@import './components/modal-button';
+@import './components/logo';
+@import './components/header';
+@import './components/hero';
+@import './components/qualities';
+@import './components/about-us';
+@import './components/our-team';
+@import './components/clients';
+@import './components/footer';

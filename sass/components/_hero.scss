@@ -1,35 +1,29 @@
-/*=============== HERO ===================*/
-
-.hero {
-  height: 600px;
-  padding-top: 200px;
-  max-width: 1600px;
-  margin: 0 auto;
-  text-align: center;
-
-  background: $hero-background;
+.overlay {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background/background.jpg);
+    url(../images/main/Overlay.jpg);
+  background-color: $logo-color;
 
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero .container {
-  width: 696px;
-}
-
-.hero-title {
+.main-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.364;
+  line-height: 1.36;
   letter-spacing: 0.06em;
-
   text-transform: uppercase;
-
-  color: $hero-color;
+  color: $main-text-color;
+  width: 660px;
+  margin: 0 auto;
 }
