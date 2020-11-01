@@ -18,8 +18,8 @@
 
 .portfolio-modal-button {
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: $subtitle-font-weight;
+  font-size: $subtitle-font-size;
   line-height: 1.625;
   letter-spacing: 0.03em;
   padding: 6px 22px;
@@ -29,7 +29,7 @@
   border-radius: 4px;
 
   transition: background-color 250ms $timing-function,
-    box-shadow 250ms $timing-function, color 250ms $timing-function;
+    box-shadow 250ms $transition-function, color $transition-function;
 }
 
 .portfolio-modal-button:hover,
@@ -70,7 +70,7 @@
 }
 
 .project-title {
-  font-weight: 700;
+  font-weight: $title-font-weight;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -79,7 +79,7 @@
 }
 .project-type {
   font-weight: 400;
-  font-size: 16px;
+  font-size: $subtitle-font-size;
   line-height: 1.875;
   letter-spacing: 0.03em;
 
@@ -91,7 +91,7 @@
 .project-list-link {
   text-decoration: none;
 
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow $transition-function;
 }
 
 .project-list-link:hover {
@@ -124,7 +124,7 @@
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: 250ms $timing-function;
+  transition: $transition-function;
 }
 
 .text-overlay {

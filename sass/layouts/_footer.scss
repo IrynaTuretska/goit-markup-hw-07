@@ -9,7 +9,7 @@
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: $title-font-weight;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -52,7 +52,7 @@
 }
 .footer-social {
   font-style: normal;
-  font-weight: 700;
+  font-weight: $title-font-weight;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -110,7 +110,7 @@
   height: 50px;
   background-color: $accent-color;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $title-font-weight;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0.03em;
@@ -131,7 +131,7 @@
 }
 .subscribe-mail input {
   padding: 15px;
-  font-size: 16px;
+  font-size: $subtitle-font-size;
   background-color: $background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -141,7 +141,7 @@
 
 .title-sibscribe {
   font-style: normal;
-  font-weight: 700;
+  font-weight: $title-font-weight;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;

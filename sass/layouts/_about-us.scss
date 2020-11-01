@@ -22,7 +22,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: $title-font-weight;
   line-height: 1.17;
   letter-spacing: 0.03em;
   white-space: nowrap;
@@ -31,8 +31,8 @@
 
 .about-us,
 .team {
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: $title-font-weight;
+  font-size: $title-font-size;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: $title-text-color;

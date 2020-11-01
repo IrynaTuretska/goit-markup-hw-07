@@ -12,8 +12,8 @@
   margin-right: 8px;
 }
 .projects {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: $subtitle-font-weight;
+  font-size: $subtitle-font-size;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: $title-text-color;
@@ -25,9 +25,8 @@
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-function,
+    box-shadow $transition-function, color $transition-function;
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -69,7 +68,7 @@
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $transition-function;
   .border:hover & {
     transform: translateX(0);
   }
@@ -91,7 +90,7 @@
   flex-wrap: wrap;
 }
 .our-projects {
-  font-weight: 700;
+  font-weight: $title-font-weight;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -101,7 +100,7 @@
 
 .our-projects-type {
   font-weight: 400;
-  font-size: 16px;
+  font-size: $subtitle-font-size;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: $primary-text-color;
